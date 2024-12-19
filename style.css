@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk keseluruhan body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 80px;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #335294;
+    color: white;
+}
+
+.header-container h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Styling untuk form */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-top: 5px;
+}
+
+/* Styling untuk tiap bagian input */
+.input-section {
+    margin-bottom: 15px;
+}
+
+.input-section h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+/* Styling label untuk setiap input */
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Styling untuk setiap input text dan select */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #fafafa;
+}
+
+/* Styling untuk tombol submit */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4c5baf;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol submit */
+button[type="submit"]:hover {
+    background-color: #2d40ac;
+}
+
+/* Tampilan Rekomendasi */
+/* Gaya untuk popup */
+/* Styling untuk overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+/* Styling untuk popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.568);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+/* Konten dalam popup */
+.popup-content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tombol tutup/kembali */
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #335294;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Tombol tutup hover */
+.back-button:hover {
+    background-color: darkred;
+}
+
+
+/* Judul popup */
+.popup-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Subjudul */
+.popup-content h3 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Daftar program studi */
+.popup-content ul {
+    list-style-type: disc; /* Tampilan poin */
+    padding-left: 20px;
+    text-align: left;
+}
+
+.popup-content ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Styling untuk rekomendasi jurusan */
+h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #4c5baf;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-section {
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+}
